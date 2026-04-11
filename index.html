@@ -163,7 +163,52 @@ footer {
 
   <div class="hero-content">
     <!-- YOUR PHOTO -->
-    <img src="my photo.PNG" alt="photo">
+    <img src="data:image/svg+xml;utf8,
+<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'>
+<defs>
+  <linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'>
+    <stop offset='0%25' stop-color='%230f2027'/>
+    <stop offset='50%25' stop-color='%232c5364'/>
+    <stop offset='100%25' stop-color='%234ca1af'/>
+  </linearGradient>
+
+  <linearGradient id='card' x1='0' y1='0' x2='1' y2='1'>
+    <stop offset='0%25' stop-color='%2300c6ff'/>
+    <stop offset='100%25' stop-color='%230047ff'/>
+  </linearGradient>
+
+  <filter id='glow'>
+    <feGaussianBlur stdDeviation='6' result='coloredBlur'/>
+    <feMerge>
+      <feMergeNode in='coloredBlur'/>
+      <feMergeNode in='SourceGraphic'/>
+    </feMerge>
+  </filter>
+</defs>
+
+<!-- Background -->
+<rect width='400' height='400' fill='url(%23bg)'/>
+
+<!-- Circle glow -->
+<circle cx='200' cy='140' r='60' fill='%23ffffff' opacity='0.15' filter='url(%23glow)'/>
+
+<!-- Head -->
+<circle cx='200' cy='130' r='55' fill='%23ffffff'/>
+
+<!-- Body -->
+<rect x='130' y='200' width='140' height='130' rx='25' fill='url(%23card)' filter='url(%23glow)'/>
+
+<!-- Code symbol -->
+<text x='200' y='270' text-anchor='middle' fill='white' font-size='28' font-family='monospace'>
+&lt;/&gt;
+</text>
+
+<!-- Label -->
+<text x='200' y='360' text-anchor='middle' fill='white' font-size='18' font-family='Arial'>
+Frontend Developer
+</text>
+</svg>" 
+alt="Developer Image">
 
     <h1>I Build Websites That Bring Customers</h1>
     <p>I help businesses grow online with clean and modern websites.</p>
